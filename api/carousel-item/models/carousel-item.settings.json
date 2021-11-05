@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carousel_items",
+  "info": {
+    "name": "carousel_item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "carousel": {
+      "model": "carousel"
+    },
+    "content_tag": {
+      "model": "content-tag"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

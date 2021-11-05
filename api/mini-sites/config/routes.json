@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mini-sites",
+      "handler": "mini-sites.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mini-sites/count",
+      "handler": "mini-sites.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mini-sites/:id",
+      "handler": "mini-sites.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mini-sites",
+      "handler": "mini-sites.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mini-sites/:id",
+      "handler": "mini-sites.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mini-sites/:id",
+      "handler": "mini-sites.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carousels",
+  "info": {
+    "name": "carousel",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "mini_site": {
+      "model": "mini-sites"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "carousel-items": {
+      "via": "carousel",
+      "model": "carousel-item"
+    }
+  }
+}

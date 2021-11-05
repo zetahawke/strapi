@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_tags",
+  "info": {
+    "name": "content_tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "classes": {
+      "type": "text"
+    },
+    "styles": {
+      "type": "string"
+    },
+    "datas": {
+      "type": "string"
+    },
+    "other_props": {
+      "type": "text"
+    }
+  }
+}
