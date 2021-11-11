@@ -2,12 +2,13 @@
   "name": "strapi-minisites",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Strapi backend to hold e-commerce's landing and promotional minisites",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "devDependencies": {},
   "dependencies": {
@@ -27,7 +28,7 @@
     "strapi-utils": "3.6.8"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Michel B Szinavel (zetahawke)"
   },
   "strapi": {
     "uuid": "dc643044-e9ec-47d4-8e10-c731bcb69840"
