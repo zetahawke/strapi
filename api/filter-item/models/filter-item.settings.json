@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filter_items",
+  "info": {
+    "name": "filter_item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "filters_section": {
+      "model": "filters-section"
+    },
+    "content_tag": {
+      "model": "content-tag"
+    }
+  }
+}

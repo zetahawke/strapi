@@ -20,10 +20,6 @@
     },
     "order": {
       "type": "integer"
-    },
-    "filter-contents": {
-      "via": "filters_section",
-      "model": "filter-content"
     }
   }
 }
