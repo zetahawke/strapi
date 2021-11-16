@@ -26,13 +26,18 @@
       "pluginOptions": {}
     },
     "mini_site": {
-      "model": "mini-sites"
+      "model": "mini-sites",
+      "via": "banners"
     },
     "content_tag": {
       "model": "content-tag"
     },
     "order": {
       "type": "integer"
+    },
+    "slides": {
+      "via": "banner",
+      "model": "slide"
     }
   }
 }

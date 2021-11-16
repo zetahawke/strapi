@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slides",
+  "info": {
+    "name": "slide"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "model": "banner",
+      "via": "slides"
+    },
+    "content_tag": {
+      "model": "content-tag"
+    }
+  }
+}

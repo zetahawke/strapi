@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbars",
+  "info": {
+    "name": "navbar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content_tag": {
+      "model": "content-tag"
+    },
+    "navbar_items": {
+      "via": "navbar",
+      "model": "navbar-item"
+    },
+    "mini_site": {
+      "via": "navbars",
+      "model": "mini-sites"
+    }
+  }
+}

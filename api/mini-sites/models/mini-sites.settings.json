@@ -25,6 +25,10 @@
     "sub_title": {
       "type": "text"
     },
+    "navbars": {
+      "via": "mini_site",
+      "model": "navbar"
+    },
     "banners": {
       "via": "mini_site",
       "model": "banner"

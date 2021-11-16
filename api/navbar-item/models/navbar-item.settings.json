@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbar_items",
+  "info": {
+    "name": "navbar_item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navbar": {
+      "via": "navbar_items",
+      "model": "navbar"
+    },
+    "content_tag": {
+      "model": "content-tag"
+    }
+  }
+}
