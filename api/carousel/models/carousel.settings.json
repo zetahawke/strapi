@@ -24,7 +24,7 @@
     },
     "carousel-items": {
       "via": "carousel",
-      "model": "carousel-item"
+      "collection": "carousel-item"
     }
   }
 }

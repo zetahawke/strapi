@@ -37,7 +37,7 @@
     },
     "slides": {
       "via": "banner",
-      "model": "slide"
+      "collection": "slide"
     }
   }
 }

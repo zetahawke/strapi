@@ -21,6 +21,10 @@
     },
     "order": {
       "type": "integer"
+    },
+    "filter_items": {
+      "collection": "filter-item",
+      "via": "filters_section"
     }
   }
 }

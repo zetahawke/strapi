@@ -27,23 +27,23 @@
     },
     "navbars": {
       "via": "mini_site",
-      "model": "navbar"
+      "collection": "navbar"
     },
     "banners": {
       "via": "mini_site",
-      "model": "banner"
+      "collection": "banner"
     },
     "carousels": {
       "via": "mini_site",
-      "model": "carousel"
+      "collection": "carousel"
     },
     "filters-sections": {
       "via": "mini_site",
-      "model": "filters-section"
+      "collection": "filters-section"
     },
     "footers": {
       "via": "mini_site",
-      "model": "footer"
+      "collection": "footer"
     }
   }
 }
