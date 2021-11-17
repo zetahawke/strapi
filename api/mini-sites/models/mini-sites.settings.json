@@ -37,7 +37,7 @@
       "via": "mini_site",
       "collection": "carousel"
     },
-    "filters-sections": {
+    "filters_sections": {
       "via": "mini_site",
       "collection": "filters-section"
     },

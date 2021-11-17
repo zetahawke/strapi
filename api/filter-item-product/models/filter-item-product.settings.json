@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "filter_items",
+  "collectionName": "filter_item_products",
   "info": {
-    "name": "filter_item"
+    "name": "filter_item_product"
   },
   "options": {
     "increments": true,
@@ -11,15 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "filters_section": {
-      "model": "filters-section"
-    },
     "content_tag": {
       "model": "content-tag"
     },
-    "filter_item_products": {
-      "via": "filter_item",
-      "collection": "filter-item-product"
+    "filter_item": {
+      "model": "filter-item"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }

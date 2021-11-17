@@ -17,7 +17,7 @@
     },
     "mini_site": {
       "model": "mini-sites",
-      "via": "filters-sections"
+      "via": "filters_sections"
     },
     "order": {
       "type": "integer"
