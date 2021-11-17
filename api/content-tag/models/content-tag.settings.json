@@ -45,6 +45,12 @@
     },
     "text": {
       "type": "text"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "embedded_code": {
+      "type": "richtext"
     }
   }
 }
