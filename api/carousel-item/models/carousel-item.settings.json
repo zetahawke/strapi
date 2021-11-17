@@ -32,6 +32,7 @@
       "pluginOptions": {}
     },
     "carousel": {
+      "via": "carousel_items",
       "model": "carousel"
     },
     "content_tag": {

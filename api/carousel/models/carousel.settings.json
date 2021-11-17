@@ -25,6 +25,9 @@
     "carousel_items": {
       "via": "carousel",
       "collection": "carousel-item"
+    },
+    "content_tag": {
+      "model": "content-tag"
     }
   }
 }
