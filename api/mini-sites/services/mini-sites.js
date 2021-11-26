@@ -18,6 +18,7 @@ module.exports = {
       'banners', 'banners.content_tag', 'banners.slides', 'banners.slides.content_tag',
       'carousels', 'carousels.content_tag', 'carousels.carousel_items', 'carousels.carousel_items.content_tag',
       'filters_sections', 'filters_sections.content_tag', 'filters_sections.filter_items', 'filters_sections.filter_items.content_tag', 'filters_sections.filter_items.filter_item_products', 'filters_sections.filter_items.filter_item_products.content_tag',
+      'featured_products', 'featured_products.content_tag', 'featured_products.featured_product_items', 'featured_products.featured_product_items.content_tag',
       'footers', 'footers.content_tag',
     ]);
   },
@@ -33,6 +34,7 @@ module.exports = {
       'banners', 'banners.content_tag', 'banners.slides', 'banners.slides.content_tag',
       'carousels', 'carousels.content_tag', 'carousels.carousel_items', 'carousels.carousel_items.content_tag',
       'filters_sections', 'filters_sections.content_tag', 'filters_sections.filter_items', 'filters_sections.filter_items.content_tag', 'filters_sections.filter_items.filter_item_products', 'filters_sections.filter_items.filter_item_products.content_tag',
+      'featured_products', 'featured_products.content_tag', 'featured_products.featured_product_items', 'featured_products.featured_product_items.content_tag',
       'footers', 'footers.content_tag',
     ]);
   },

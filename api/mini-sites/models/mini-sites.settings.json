@@ -41,6 +41,10 @@
       "via": "mini_site",
       "collection": "filters-section"
     },
+    "featured_products": {
+      "via": "mini_site",
+      "collection": "featured-product"
+    },
     "footers": {
       "via": "mini_site",
       "collection": "footer"

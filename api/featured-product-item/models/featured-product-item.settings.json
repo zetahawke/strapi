@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_product_items",
+  "info": {
+    "name": "featured_product_item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content_tag": {
+      "model": "content-tag"
+    },
+    "featured_product": {
+      "model": "featured-product"
+    },
+    "sku": {
+      "type": "string"
+    }
+  }
+}

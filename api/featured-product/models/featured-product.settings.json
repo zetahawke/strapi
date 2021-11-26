@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_products",
+  "info": {
+    "name": "featured_product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mini_site": {
+      "model": "mini-sites"
+    },
+    "content_tag": {
+      "model": "content-tag"
+    },
+    "featured_product_items": {
+      "collection": "featured-product-item",
+      "via": "featured_product"
+    }
+  }
+}
