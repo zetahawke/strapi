@@ -16,8 +16,8 @@
       "type": "string"
     },
     "mini_site": {
-      "model": "mini-sites",
-      "via": "filters_sections"
+      "via": "filters_sections",
+      "model": "mini-sites"
     },
     "order": {
       "type": "integer"

@@ -26,8 +26,8 @@
       "pluginOptions": {}
     },
     "mini_site": {
-      "model": "mini-sites",
-      "via": "banners"
+      "via": "banners",
+      "model": "mini-sites"
     },
     "content_tag": {
       "model": "content-tag"

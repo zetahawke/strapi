@@ -48,6 +48,9 @@
     "footers": {
       "via": "mini_site",
       "collection": "footer"
+    },
+    "uri_path": {
+      "type": "string"
     }
   }
 }

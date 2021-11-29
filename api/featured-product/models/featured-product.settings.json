@@ -12,6 +12,7 @@
   "pluginOptions": {},
   "attributes": {
     "mini_site": {
+      "via": "featured_products",
       "model": "mini-sites"
     },
     "content_tag": {

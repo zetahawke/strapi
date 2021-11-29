@@ -16,8 +16,8 @@
       "type": "string"
     },
     "mini_site": {
-      "model": "mini-sites",
-      "via": "footers"
+      "via": "footers",
+      "model": "mini-sites"
     },
     "content_tag": {
       "model": "content-tag"
