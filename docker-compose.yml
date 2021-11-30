@@ -1,0 +1,51 @@
+version: '3'
+volumes:
+  # mysql-data:
+  #   driver: local
+  strapi_node_modules:
+    external: true
+services:
+  # mysql:
+  #   image: mysql:5.7
+  #   restart: unless-stopped
+  #   ports:
+  #     - "${DATABASE_PORT}:${DATABASE_PORT}"
+  #   volumes:
+  #     - mysql-data:/var/lib/mysql
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+  #     MYSQL_TCP_PORT: ${DATABASE_PORT}
+  #     MYSQL_UNIX_PORT: ${DATABASE_PORT}
+  #   env_file:
+  #     - .env
+  #   networks:
+  #     - strapi-app-network
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      DATABASE_CLIENT: ${DATABASE_CLIENT}
+      DATABASE_HOST: ${DATABASE_HOST}
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      DATABASE_SSL: ${DATABASE_SSL}
+      CORS_ORIGIN: ${CORS_ORIGIN}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+    ports:
+      - '${PORT}:${PORT}'
+    volumes:
+      - .:/app
+      - strapi_node_modules:/node_modules
+    # depends_on:
+    #   mysql:
+    #     condition: service_started
+    env_file:
+      - .env
+    networks:
+      - strapi-app-network
+networks:
+  strapi-app-network:
+    driver: bridge
