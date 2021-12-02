@@ -1,9 +1,4 @@
-version: '3'
-volumes:
-  # mysql-data:
-  #   driver: local
-  strapi_node_modules:
-    external: true
+version: "3.4"
 services:
   # mysql:
   #   image: mysql:5.7
@@ -20,9 +15,23 @@ services:
   #     - .env
   #   networks:
   #     - strapi-app-network
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      DATABASE_PORT: ${DATABASE_PORT}
+    ports:
+      - '${DATABASE_PORT}:${DATABASE_PORT}'
+    volumes:
+      - strapi_postgres:/var/lib/postgresql/data
+    env_file:
+      - ".env"
   app:
+    stdin_open: true
+    tty: true
     build: .
-    restart: unless-stopped
     environment:
       NODE_ENV: ${NODE_ENV}
       DATABASE_CLIENT: ${DATABASE_CLIENT}
@@ -42,10 +51,18 @@ services:
     # depends_on:
     #   mysql:
     #     condition: service_started
+    depends_on:
+      - db
     env_file:
       - .env
-    networks:
-      - strapi-app-network
-networks:
-  strapi-app-network:
-    driver: bridge
+    links:
+      - db
+    # networks:
+    #   - strapi-app-network
+volumes:
+  # mysql-data:
+  #   driver: local
+  strapi_postgres:
+    driver: local
+  strapi_node_modules:
+    external: true

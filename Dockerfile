@@ -1,7 +1,7 @@
 # A dockerfile must always start by importing the base image.
 # One can use the keyword 'FROM' to do that.
 # In our example, we want to import the Strapi image. So we write 'strapi/base' for the image name. ':14' is a tag that means we use NodeJS v14 (The latest LTS version).
-FROM strapi/base:14
+FROM strapi/strapi:latest
 
 # Set up working directory that will be used to copy files/directories below :
 WORKDIR /app
