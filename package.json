@@ -6,8 +6,8 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "staging": "cross-env NODE_ENV=staging npm start",
-    "prod": "cross-env NODE_ENV=production npm start",
+    "staging": "cross-env NODE_ENV=staging strapi start",
+    "prod": "cross-env NODE_ENV=production strapi start",
     "build": "strapi build",
     "strapi": "strapi",
     "test": "jest --forceExit --detectOpenHandles"
