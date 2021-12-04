@@ -6,11 +6,15 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
+    "staging": "cross-env NODE_ENV=staging npm start",
+    "prod": "cross-env NODE_ENV=production npm start",
     "build": "strapi build",
     "strapi": "strapi",
     "test": "jest --forceExit --detectOpenHandles"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
   "dependencies": {
     "flag": "^4.4.0",
     "knex": "0.21.18",
