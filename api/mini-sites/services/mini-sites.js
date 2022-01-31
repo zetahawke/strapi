@@ -20,6 +20,20 @@ const miniSiteEmbeddedRelations = [
   'footers', 'footers.content_tag', 'footers.content_tag.image',
 ]
 
+const sortElements =
+  'navbars.content_tag.sort:ASC,' +
+  'navbars.navbar_items.content_tag.sort:ASC,' +
+  'banners.content_tag.sort:ASC,' +
+  'banners.slides.content_tag.sort:ASC,' +
+  'carousels.content_tag.sort:ASC,' +
+  'carousels.carousel_items.content_tag.sort:ASC,' +
+  'filters_sections.content_tag.sort:ASC,' +
+  'filters_sections.filter_items.content_tag.sort:ASC,' +
+  'filters_sections.filter_items.filter_item_products.content_tag.sort:ASC,' +
+  'featured_products.content_tag.sort:ASC,' +
+  'featured_products.featured_product_items.content_tag.sort:ASC,' +
+  'footers.content_tag.sort:ASC';
+
 module.exports = {
   /**
    * Promise to fetch all records
@@ -27,8 +41,11 @@ module.exports = {
    * @return {Promise}
    */
   find(params, _populate) {
-    //  return strapi.query('mini-sites').find(params, ['banners', 'banners.slides']);
-    return strapi.query('mini-sites').find(params, miniSiteEmbeddedRelations);
+    // params = {
+    //   ...params,
+    //   _sort: sortElements
+    // }
+    return strapi.query('mini-sites').find(params, miniSiteEmbeddedRelations,);
   },
   /**
    * Promise to fetch one records
@@ -36,7 +53,10 @@ module.exports = {
    * @return {Promise}
    */
   findOne(params, _populate) {
-    //  return strapi.query('mini-sites').find(params, ['banners', 'banners.slides']);
+    // params = {
+    //   ...params,
+    //   _sort: sortElements
+    // }
     return strapi.query('mini-sites').findOne(params, miniSiteEmbeddedRelations);
   },
 };

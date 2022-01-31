@@ -28,6 +28,8 @@ services:
       - strapi_postgres:/var/lib/postgresql/data
     env_file:
       - ".env"
+    networks:
+      - default
   app:
     stdin_open: true
     tty: true
@@ -57,8 +59,8 @@ services:
       - .env
     links:
       - db
-    # networks:
-    #   - strapi-app-network
+    networks:
+      - default
 volumes:
   # mysql-data:
   #   driver: local
@@ -66,3 +68,7 @@ volumes:
     driver: local
   strapi_node_modules:
     external: true
+networks:
+  default:
+    external: true
+    name: preunic-ecommerce_default
